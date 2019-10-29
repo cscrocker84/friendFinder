@@ -219,6 +219,30 @@
         </div>
     </div>
 
+    <script>
+        $("#submit").on("click", function(event){
+            event.preventDefault();
+            if($("#name").val().trim()=== "" || $("#photo").val().trim()=== "" || $(".custom-select").val()=== null){
+                console.log("please fill out all questions")
+                return false
+            } else {
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [parseInt($("#question1").val()),parseInt($("#question2").val()),parseInt($("#question3").val()),parseInt($("#question4").val()),parseInt($("#question5").val()),parseInt($("#question6").val()),parseInt($("#question7").val()),parseInt($("#question8").val()),parseInt($("#question9").val()),parseInt($("#question10").val()),]
+                }
+                $.post("/api/friends", newFriend, function(data){
+                    console.log("friend added");
+                    $("#matchImg").attr("src", data.photo);
+                    $("#matchImg").attr("alt", data.name);
+                    $("#matchName").text(data.name);
+                    $("#name").val()="";
+                    $("#photo").val()="";
+                });
+            }
+        });
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
