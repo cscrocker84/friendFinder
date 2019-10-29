@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8e1319adda.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron bg-primary">
+            <h1 class="text-white">Fill Out The Survey Below To Find Your Match</h1>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <form action="POST">
+            <div class="form-group">
+                <h4>About You</h4>
+                <div class="form-group">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="photo">Link to Photo Image (Required)</label>
+                    <input type="text" class="form-control" id="photo" required>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <h4>Question 1</h4>
+                <div class="form-group">
+                    <label for="question1">You Love Pina Coladas.</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question1" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 2</h4>
+                <div class="form-group">
+                    <label for="question2">You Love Getting Caught in the Rain</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question2" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 3</h4>
+                <div class="form-group">
+                    <label for="question3">You Are Into Yoga</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question3" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 4</h4>
+                <div class="form-group">
+                    <label for="question4">You Hate the Blackhawks with a Passion.</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question4" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 5</h4>
+                <div class="form-group">
+                    <label for="question5">You think that Non-Natives should leave Nashville and/or be treated as 2nd
+                        class citizens.</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question5" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 6</h4>
+                <div class="form-group">
+                    <label for="question6">You Love Dogs</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question6" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 7</h4>
+                <div class="form-group">
+                    <label for="question7">You Prefer your Music Live</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question7" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 8</h4>
+                <div class="form-group">
+                    <label for="question8">You Love the Grateful Dead</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question8" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 9</h4>
+                <div class="form-group">
+                    <label for="question9">You think that Donna singlehandedly ruined the mid-70s</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question9" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Question 10</h4>
+                <div class="form-group">
+                    <label for="question10">You think that Brent was by far the best keyboardist</label>
+                    <div class="input-group mb-3 col-3">
+                        <select class="custom-select bg-primary text-white" id="question10" required>
+                            <option disabled selected>Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-block" id="submit" data-toggle="modal"
+                data-target="#matchModal"><strong>Submit</strong></button>
+        </form>
+        <p><a href="/api/friends">API Freinds List</a>| <a href="https://github.com/cscrocker84/friendFinder">GitHub
+                Repo</a></p>
+    </div>
+    <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title text-center" id="exampleModalLabel">You Matched With</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="matchImg" src="" alt="" class="w-100">
+                    <h4 id="matchName" class="text-center"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+    <script>
+    </script>
+
+</body>
+
+</html>
